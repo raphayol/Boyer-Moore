@@ -14,7 +14,7 @@ $(NAME): $(OBJS)
 	 $(CC) -o $@ -c $< $(FLAGS)
 
 test: $(NAME)
-	$(CC) $(FLAGS) test/main.c -L. -lsubstr -o $(BIN_TEST)
+	$(CC) $(FLAGS) -Isrc test/main.c -L. -lsubstr -o $(BIN_TEST)
 	exec $(BIN_TEST)
 
 clean:
