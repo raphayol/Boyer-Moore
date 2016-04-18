@@ -5,7 +5,7 @@ OBJS= $(SOURCES:.c=.o)
 NAME 	=	libsubstr.a
 BIN_TEST = test/test
 
-all: $(NAME) test
+all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rc $(NAME) $(OBJS)
